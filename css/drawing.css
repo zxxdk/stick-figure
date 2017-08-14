@@ -1,0 +1,197 @@
+.wrapper{
+	margin:100px 0 0 100px;
+    position:absolute;
+}
+
+div{
+	display:block;
+}
+.col{
+	position: absolute;
+    top: 18px;
+    left: 96px;
+    width: 234px;
+    height: 185px;
+    border: 4px solid orange;
+    border-top-left-radius: 117px 117px;
+    border-top-right-radius: 117px 117px;
+    border-bottom-left-radius: 117px 68px;
+    border-bottom-right-radius: 117px 68px;
+    border-bottom-color:transparent;
+    
+}
+
+.eyebrow{
+	position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 4px solid orange;
+    border-bottom-color:transparent;
+	border-right-color: transparent;
+	border-left-color:transparent;
+}
+
+.col .left.eyebrow{
+	position: absolute;
+    top:60px;
+    left: 40px;
+    
+}
+
+.col .right.eyebrow{
+	position: absolute;
+	top:60px;
+	left:120px;
+
+}
+
+.eye{
+	position: absolute;
+    width: 20px;
+    height: 33px;
+    border:0;
+    background-color:orange ;
+	border-top-left-radius: 70%;
+	border-top-right-radius: 70%;
+	border-bottom-right-radius: 70%;
+	border-bottom-left-radius: 70%;
+}
+
+.col .left.eye{
+	position: absolute;
+    top:96px;
+    left:42px;
+   
+}
+
+.col .left.eye .innerlefteye{
+	position:absolute;
+	content:"";
+	top:5px;
+	left:5px;
+	border:0;
+	width:8px;
+	height:8px;
+	border-radius: 50%;
+	background-color:white;
+
+}
+
+.col .right.eye{
+	position:absolute;
+	left:128px;
+	top:96px;
+
+}
+
+.col .right.eye .innerrighteye{
+	position:absolute;
+	content:"";
+	top:5px;
+	left:5px;
+	border:0;
+	width:8px;
+	height:8px;
+	border-radius: 50%;
+	background-color:white;
+
+}
+/*身体*/
+.co{
+	border: 4px solid orange;
+    position:absolute;
+    background: white;
+    width: 234px;
+    height: 115px;
+    top: 148px;
+    left: 92px;
+    border-top-left-radius: 30px 34px;
+    border-top-right-radius: 38px 34px;
+    border-bottom-left-radius: 50% 76px;
+    border-bottom-right-radius: 50% 76px;
+    border-top-color:transparent;
+}
+/*手*/
+.hand{
+	position:absolute;
+	width:40px;
+	height:20px;
+	border: 4px solid orange;
+	background-color:white ;
+	border-top-left-radius: 70%;
+	border-top-right-radius: 70%;
+	border-bottom-right-radius: 70%;
+	border-bottom-left-radius: 70%;
+}
+.co .left.hand{
+	position: absolute;
+    top:20px;
+    left:10px;
+
+}
+.co .right.hand{
+	position: absolute;
+	left:160px;
+	top:20px;
+
+}
+/*手摆动*/
+.hand{
+	-webkit-animation-name:animation;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-duration:3s;
+	-webkit-transform-style:preserve-3d;
+	-webkit-transform-origin:10px 20px 0;
+	-moz-animation-name:animation;
+	-moz-animation-timing-function:ease-in-out;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-duration:3s;
+	-moz-transform-style:preserve-3d;
+	-moz-transform-origin:10px 20px 0;
+	-o-animation-name:animation;
+	-o-animation-timing-function:ease-in-out;
+	-o-animation-iteration-count:infinite;
+	-o-animation-duration:3s;
+	-o-transform-style:preserve-3d;
+	-o-transform-origin:10px 20px 0;
+}
+
+@keyframes animation{
+	from,to{}
+	16%{transform:rotateY(-30deg);}
+	33%{transform:rotateY(-30deg)rotateZ(0deg);}
+	50%{transform:rotateY(80deg)rotateZ(0deg);}
+	66%{transform:rotateY(80deg)rotateX(0deg);}
+	83%{transform:rotateX(0deg);}
+
+}
+
+@-webkit-keyframes animation{
+	from,to{}
+	16%{-webkit-transform:rotateY(-30deg);}
+	33%{-webkit-transform:rotateY(-30deg)rotateZ(0deg);}
+	50%{-webkit-transform:rotateY(80deg)rotateZ(0deg);}
+	66%{-webkit-transform:rotateY(80deg)rotateX(0deg);}
+	83%{-webkit-transform:rotateX(0deg);}
+}
+@-moz-keyframes animation{
+	from,to{}
+	16%{-moz-transform:rotateY(-30deg);}
+	33%{-moz-transform:rotateY(-30deg)rotateZ(0deg);}
+	50%{-moz-transform:rotateY(80deg)rotateZ(0deg);}
+	66%{-moz-transform:rotateY(80deg)rotateX(0deg);}
+	83%{-moz-transform:rotateX(0deg);}
+}
+
+@-o-keyframes animation{
+	from,to{}
+	16%{-o-transform:rotateY(-30deg);}
+	33%{-o-transform:rotateY(-30deg)rotateZ(0deg);}
+	50%{-o-transform:rotateY(80deg)rotateZ(0deg);}
+	66%{-o-transform:rotateY(80deg)rotateX(0deg);}
+	83%{-o-transform:rotateX(0deg);}
+
+}
+
